@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey</title>
+</head>
+<body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Please share your thoughts with us!</p>
+    <form id="survey-form" method="post">
+        <fieldset>
+            <label id="name-label" for"name">Name: <input id="name" type="text" placeholder="Your Name" required value="name"></label><br>
+            <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Your E-mail" required value="email"></label><br>
+            <label id="number-label" for="number">Number: <input id="number" type="number" min="9" max="11" placeholder="No" value="number"></input></label>
+        </fieldset>
+        <fieldset>
+            <legend>Account type (required)</legend>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked value="personal" /> Personal</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type" value="business" /> Business</label><br>
+            <label for="dropdown">
+                How did you hear about us?
+                <select id="dropdown" name="referrer" value="referrer">
+                    <option value="0">(select one)</option>
+                    <option value="1">News</option>
+                    <option value="2">YouTube</option>
+                    <option value="3">Google</option>
+                    <option value="4">Other</option>
+                </select>
+            </label><br>
+            <label for="comments">Write your thoughts: <textarea id="comments" value="comments"></textarea></label><br>
+            <label for="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="terms"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label><br>
+            <label>
+                <input id="mailing" type="checkbox" value="mailing"> I accept advertisement mailings
+            </label><br>
+            <input id="submit" type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>

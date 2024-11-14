@@ -1,0 +1,25 @@
+﻿body {
+    color: rgb(80 50 20);
+}
+
+h1, p {
+    text-align: center;
+}
+
+form, input {
+    margin: 10px auto 10px;
+    padding: 10px auto 10px;
+}
+
+body {
+    background-color: rgb(220 220 170);
+}
+
+a {
+    color: rgb(80 50 20);
+}
+
+    a:hover {
+        color: rgb(100 100 100);
+        text-decoration: none;
+    }
